@@ -75,7 +75,9 @@ if (a > 0){
 }
 else if(a < 0){
 alert("incorret data. Plese enter positive number");
-a = +prompt("length a =")}; 
+a = +prompt("length a =");
+}; 
+
 let b = +prompt("length b =");
 if (b > 0){
     alert("correct")
@@ -83,6 +85,7 @@ if (b > 0){
 else if (b < 0){
 alert("incorret data. Plese enter positive number");
 b = +prompt("length b =")};
+
 let c = +prompt("length c =");
 if (c > 0){
     alert("correct")
@@ -93,7 +96,7 @@ c = +prompt("length c =")};
 let p = (a + b + c) / 2;
 let s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
 alert("area =" + s.toFixed(3));
-if (a**2 + b**2 == c**2){
+if (a**2 + b**2 == c**2 || c**2 + b**2 == a**2 || a**2 + c**2 == b**2){
     alert("it's a right triangle")
 };
 
