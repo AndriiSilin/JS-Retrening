@@ -1,60 +1,91 @@
-//Task 2 
-//var lastName = "Silin";
-//console.log(lastName);
+//task1
+// let array = [2, 3, 4, 5];
+// let total = 1;
+// for (let i = 0; i < array.length; i++) {
+//     total *= array[i];
+// }
+// alert(total);
 
-//task3 
-//var firstName = "Andrii";
-//var lastName = "Silin";
-//lastName = firstName;
-//console.log(firstName, lastName);
+// let array = [2, 3, 4, 5];
+// let total = 1;
+// let i = 0;
+// while (i < array.length) {
+//    total *= array[i];
+//    i++;
+// }
+// alert(total);
+
+//task2
+// let array = [];
+// array = Array.from({ length: 15 }, (v, i) =>  i ++); 
+// console.log(array); 
+
+// for (let i = 0; i <= 15; i++) {
+//    if (i % 2 === 0) {
+//      alert([i] + " is odd");
+//    }
+//    else {
+//     alert([i] + " is even");
+//    }
+// };
+
+//task3
+
+// let length = 5;
+// let min = 1;
+// let max = 500;
+
+// let array = [];
+// for (let i=0; i < length; i++ ){
+//  array.push(randomArray(min, max));
+// }
+// console.log(array);
+
+// function randomArray(min, max){
+//  random = Math.random() * (max - min) + min;
+//  return random.toFixed(0);
+// }
 
 //task4
-//const student = {
-//    firtName: "Andrii",
- //   age: 35,
- //   men: true,
- //   weight: null,
- //   yearOfGraduate: undefined
-//} 
-//console.log(student);
+// function riseToDegree(a, b) {
+// a = Number(prompt('enter the number a'));
+// b = Number(prompt('enter the number b'));
+// if (Number.isInteger(a) && Number.isInteger(b)){
+//   let result = a ** b;
+//   return result;
+// }
+// else {alert('Try again');
+// }    
+// }
+// let res = riseToDegree();
+// console.log(res); 
 
-//task5
-//var isAdult = confirm("How  old are you?");
-//alert(isAdult);
-//console.log(isAdult);
+//task8 але це лише для першої букви
+// let text = "i love java script";
 
-//task6
-//   const student ={
-//    firstName: "Andrii",
-//   lastName: "Silin",
-//    group: "LV-732",
-//    birthdayYear: 1984,
-//    marriedStatus: true,
-//    pets: undefined, 
-//    children: null,
-//}
-//console.log(typeof student.firstName, 
-//    typeof student.lastName, 
-//    typeof student.group, 
-//    typeof student.birthdayYear, 
-//    typeof student.marriedStatus,
-//    typeof student.pets, 
-//   typeof student.children);
+// function firstUpperCharacter(text){
+//     return text[0].toUpperCase() + text.substring(1);
+// }
 
-//console.log(student.birthdayYear,
-//    student.marriedStatus,
-//    student.firstName, 
-//    student.lastName, 
-//    student.group);
+// console.log(firstUpperCharacter(text));
 
-//task7
-//var email = prompt("Your email");
-//var userName = prompt("Your User name");
-//var password = prompt("Your password");
-//alert('Account has been created \n Your email - ' + email + '\n Your Log In ID - ' + userName + '\n Your password - ' + password);
+// //task6
+// let lenght = 5;
+// let array = [];
+// for (i = 0; i < lenght; i++){
+//     array[i] = prompt('Enter number ' +i);
+// }
+// console.log(array);
 
-//task8
-//var hours = +prompt("How many hours you need to complete task?");
-//var days = +prompt("How many days you need to complete task?");
-//days = days*24
-//alert('You will spend: \n' + (days + hours) + ' hours');
+// function testUniqueSort(array)
+// {
+// let n = array.length;
+// for (let i = 0; i < n-1; i++)
+// { for (let j = i+1; j < n; j++)
+// { if (array[ i ] === array[j]) 
+//   return false; }
+// }
+// return true;
+// }
+// console.log(testUniqueSort(array));
+
