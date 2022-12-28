@@ -60,6 +60,57 @@
 // let res = riseToDegree();
 // console.log(res); 
 
+//task5
+// let a = Number(prompt('enter the number a'));
+// let b = Number(prompt('enter the number b'));
+// let c = Number(prompt('enter the number c'));
+// let d = Number(prompt('enter the number d'));
+
+// function findMin() {
+//   let min = arguments[0];
+//   for (i = 1; i < arguments.length; i++) {
+//     if (arguments[i] < min) {
+//       min = arguments[i];
+//     }
+//   }
+//   return min;
+//  }
+//   console.log(findMin(a, b, c, d));
+
+//task6
+// let lenght = 5;
+// let array = [];
+// for (i = 0; i < lenght; i++){
+//     array[i] = prompt('Enter number ' +i);
+// }
+// console.log(array);
+
+// function testUniqueSort(array)
+// {
+// let n = array.length;
+// for (let i = 0; i < n-1; i++)
+// { for (let j = i+1; j < n; j++)
+// { if (array[ i ] === array[j]) 
+//   return false; }
+// }
+// return true;
+// }
+// console.log(testUniqueSort(array));  
+
+//task7
+// let array = [1,2,3,4,5,6,7];
+
+// function lastElement(array, last) {
+//   if (last == null) {
+//     console.log(array.pop())
+//   }
+//   else {
+//     console.log(array.slice(-last));
+//   }
+  
+// }
+// console.log(lastElement(array, 2));
+
 //task8 але це лише для першої букви
 // let text = "i love java script";
 
@@ -68,8 +119,38 @@
 // }
 
 // console.log(firstUpperCharacter(text));
+//task 8 
 
-// //task6
+let text = "i love java script";
+function upperLetter(text) {
+  let array = text.split('');
+  let newArray = [];
+  for (let i = 0; i < array.length; i++){
+    newArray.push(array[i].charAt(0).toUpperCase() + array[i].slice(1));
+  }
+  return newArray.join('');
+}
+console.log(upperLetter(text));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//task6
 // let lenght = 5;
 // let array = [];
 // for (i = 0; i < lenght; i++){
