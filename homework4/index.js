@@ -168,3 +168,80 @@
 // }
 
 //task 4
+
+
+function showUser (id) {
+
+    if (id < 0) 
+    throw new Error ("ID negative: " + id);
+    return {id};
+}
+
+function showUsers (ids) {
+
+    let usersArray = [];
+    for (let i of ids) {
+        
+        try {
+            usersArray.push(showUser(i));
+        } catch (error) {
+            console.log(error.message);
+        }
+    }
+    return usersArray;
+}
+
+let usersId = [1, -1, 2, 3, 4, 5];
+console.log(showUsers(usersId));
+// task4 все що нижче 195, то творчі експеременти 
+
+
+
+
+// class ErrorId {
+//         constructor(message) {
+//             this.name = 'ErrorId';
+//             this.message = message;
+//         }
+//     }
+    
+//     function showUser(id){
+//         try{
+//             if(id < 0){
+//                 throw new ErrorId('ID must not be negative');
+//             }
+//             else{
+//                 return {id};
+//             } 
+//         }
+//         catch (ErrorId) {
+//             console.log(ErrorId.name + ':'+ ErrorId.message);
+//         }
+//     }
+    
+//     let userIDs = [7, -12, 44, 22]; 
+    
+//     function showUsers(userIDs){
+//         let checkedIds = [];
+//         let length = 5;
+//         //userIDs = +prompt('Enter number');    
+//         for (let userIDs = 0; id < length; userIDs++)
+//         {
+//             try{
+            
+//             if(userIDs < 0){
+//                 throw new ErrorId('ID must not be negative: ' + userIDs);
+//             }
+//             else{
+//                 checkedIds.push(userIDs);
+//             }
+//         }
+//         catch (ErrorId) {
+//             console.log(ErrorId.name + ':'+ ErrorId.message);
+//             }
+//         }
+//         return checkedIds;
+//     }
+    
+//     console.log(showUser());
+//     console.log(showUsers(userIDs));
