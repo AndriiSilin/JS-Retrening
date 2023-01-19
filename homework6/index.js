@@ -18,19 +18,20 @@
 
 //task2
 
-// function checkEmail(str) {
-//     let regEx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z]/;
-      
-//     if (str.match(regEx)) {
-//         alert("Valid email");
-//     } else {
-//         alert("Invalid email");             
-//     }
-      
-// }
+function checkEmail(str) {
     
-//     console.log(checkEmail("test@i.ua.com"));
-//     console.log(checkEmail("CheckEmail.com"));
+      let regEx = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.[A-Za-z]/;
+      
+    if (str.match(regEx)) {
+        alert("Valid email");
+    } else {
+        alert("Invalid email");             
+    }
+      
+}
+    
+    console.log(checkEmail("test@i.ua.com"));
+    console.log(checkEmail("CheckEmail.com"));
 //-----------------------------------end--------------------
 
 //task3
